@@ -86,27 +86,16 @@ export function Navbar() {
           </button>
         </nav>
 
-        {/* Mobile Menu Toggle */}
         <div className="flex items-center gap-4 md:hidden">
           <button
             onClick={toggleTheme}
-            className="p-2 rounded-full hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors text-zinc-600 dark:text-zinc-400"
+            className="p-2 mr-2  rounded-full hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors text-zinc-600 dark:text-zinc-400"
             aria-label="Toggle Theme"
           >
             {isDarkMode ? (
               <Sun className="w-5 h-5" />
             ) : (
               <Moon className="w-5 h-5" />
-            )}
-          </button>
-          <button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="p-2 text-zinc-600 dark:text-zinc-400"
-          >
-            {isMobileMenuOpen ? (
-              <X className="w-6 h-6" />
-            ) : (
-              <Menu className="w-6 h-6" />
             )}
           </button>
         </div>
