@@ -26,8 +26,8 @@ export const portfolioData = {
     github: 'https://github.com/Ankur33657',
     linkedin: 'https://www.linkedin.com/in/ankur-singh-8b470b206/',
     leetcode: 'https://leetcode.com/Ankur33657',
-    resumeUrl: '/resume.pdf',
-    photoUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop',
+    resumeUrl: 'https://drive.google.com/file/d/1ckGMfF87RGCzScRSOoPfRoMHsvHISY6J/view?usp=sharing',
+    photoUrl: '/profile.jpeg',
   },
   about: {
     introduction:

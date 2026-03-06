@@ -109,11 +109,12 @@ export function Hero() {
         >
           <a
             href={personal.resumeUrl}
-            download="Ankur_Singh_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 px-6 py-3 bg-zinc-900 dark:bg-zinc-50 text-white dark:text-zinc-900 rounded-full font-medium hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-colors shadow-lg hover:shadow-xl"
           >
             <FileText className="w-5 h-5" />
-            Download Resume
+            View Resume
           </a>
           <div className="flex items-center gap-4">
             <a
