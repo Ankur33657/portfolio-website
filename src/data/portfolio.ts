@@ -26,7 +26,7 @@ export const portfolioData = {
     github: 'https://github.com/Ankur33657',
     linkedin: 'https://www.linkedin.com/in/ankur-singh-8b470b206/',
     leetcode: 'https://leetcode.com/Ankur33657',
-    resumeUrl: 'https://drive.google.com/file/d/1ckGMfF87RGCzScRSOoPfRoMHsvHISY6J/view?usp=sharing',
+    resumeUrl: 'https://drive.google.com/file/d/1p6ymp9HWOrYrLevfMl45_7gSF1biBNxx/view?usp=sharing',
     photoUrl: '/profile.jpeg',
   },
   about: {
@@ -120,7 +120,7 @@ export const portfolioData = {
 title: 'Uber Backend System',
 description: 'Backend ride-matching system using Dijkstra algorithm for route optimization.',
 technologies: ['Node.js', 'MongoDB', 'Dijkstra Algorithm','Rate-limiting',],
-github: 'https://github.com/Ankur33657',
+github: 'https://github.com/Ankur33657/uber-backend',
 demo: 'https://github.com/Ankur33657',
 image: "/uber.webp",
     },
