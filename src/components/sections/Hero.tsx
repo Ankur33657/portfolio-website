@@ -66,7 +66,7 @@ export function Hero() {
           <motion.div
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
-            transition={{ delay: 0.5, type: 'spring', stiffness: 200 }}
+            transition={{ delay: 0.5, type: "spring", stiffness: 200 }}
             className="absolute bottom-2 right-2 bg-emerald-500 w-6 h-6 rounded-full border-4 border-white dark:border-zinc-800"
           />
         </motion.div>
@@ -109,6 +109,7 @@ export function Hero() {
         >
           <a
             href={personal.resumeUrl}
+            download="Ankur_Singh_Resume.pdf"
             className="flex items-center gap-2 px-6 py-3 bg-zinc-900 dark:bg-zinc-50 text-white dark:text-zinc-900 rounded-full font-medium hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-colors shadow-lg hover:shadow-xl"
           >
             <FileText className="w-5 h-5" />
@@ -146,7 +147,10 @@ export function Hero() {
           transition={{ duration: 1, delay: 1 }}
           className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce"
         >
-          <a href="#about" className="text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors">
+          <a
+            href="#about"
+            className="text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors"
+          >
             <ChevronDown className="w-8 h-8" />
           </a>
         </motion.div>

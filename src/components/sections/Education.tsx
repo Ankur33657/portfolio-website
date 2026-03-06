@@ -9,7 +9,10 @@ export function Education() {
   return (
     <section id="education" className="py-24 bg-zinc-50 dark:bg-zinc-950">
       <div className="max-w-4xl mx-auto px-6">
-        <SectionHeading title="Education" subtitle="My academic background and qualifications." />
+        <SectionHeading
+          title="Education"
+          subtitle="My academic background and qualifications."
+        />
 
         <div className="relative border-l-2 border-zinc-200 dark:border-zinc-800 ml-4 md:ml-0">
           {education.map((edu, index) => (
@@ -17,7 +20,7 @@ export function Education() {
               key={index}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-100px' }}
+              viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
               className="mb-12 ml-8 md:ml-12 relative"
             >
@@ -28,16 +31,28 @@ export function Education() {
               <div className="bg-white dark:bg-zinc-900 p-6 rounded-2xl shadow-sm border border-zinc-100 dark:border-zinc-800 hover:shadow-md transition-shadow">
                 <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                   <div>
-                    <h3 className="text-xl font-bold text-zinc-900 dark:text-zinc-50">{edu.degree}</h3>
-                    <p className="text-lg font-medium text-emerald-600 dark:text-emerald-400">{edu.institution}</p>
+                    <h3 className="text-xl font-bold text-zinc-900 dark:text-zinc-50">
+                      {edu.degree}
+                    </h3>
+                    <div className="flex flex-row gap-3">
+                      <p className="text-lg font-medium text-emerald-600 dark:text-emerald-400">
+                        {edu.institution}
+                      </p>
+                      <span className="text-sm font-medium text-zinc-500 dark:text-zinc-400 bg-zinc-100 dark:bg-zinc-800 px-3 py-1 rounded-full w-fit">
+                        {edu.year}
+                      </span>
+                    </div>
                   </div>
-                  <span className="text-sm font-medium text-zinc-500 dark:text-zinc-400 bg-zinc-100 dark:bg-zinc-800 px-3 py-1 rounded-full mt-2 md:mt-0 w-fit">
-                    {edu.year}
+
+                  <span className="text-sm font-medium text-zinc-500 dark:text-zinc-400 bg-zinc-100 dark:bg-zinc-800 px-3 py-1 rounded-full w-fit">
+                    {edu.score}
                   </span>
                 </div>
 
                 <div>
-                  <p className="text-sm font-semibold text-zinc-700 dark:text-zinc-300 mb-2">Key Coursework:</p>
+                  <p className="text-sm font-semibold text-zinc-700 dark:text-zinc-300 mb-2">
+                    Key Coursework:
+                  </p>
                   <div className="flex flex-wrap gap-2">
                     {edu.coursework.map((course, idx) => (
                       <span

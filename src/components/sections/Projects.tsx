@@ -9,7 +9,10 @@ export function Projects() {
   return (
     <section id="projects" className="py-24 bg-white dark:bg-zinc-900">
       <div className="max-w-7xl mx-auto px-6">
-        <SectionHeading title="Projects" subtitle="A selection of my recent work and personal projects." />
+        <SectionHeading
+          title="Projects"
+          subtitle="A selection of my recent work and personal projects."
+        />
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
@@ -17,7 +20,7 @@ export function Projects() {
               key={index}
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true, margin: '-100px' }}
+              viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="group relative flex flex-col bg-zinc-50 dark:bg-zinc-950 rounded-3xl overflow-hidden border border-zinc-100 dark:border-zinc-800 shadow-sm hover:shadow-xl transition-all duration-300"
             >

@@ -13,8 +13,11 @@ export function Footer() {
     <footer className="bg-zinc-950 text-zinc-400 py-12 border-t border-zinc-900">
       <div className="max-w-7xl mx-auto px-6 flex flex-col items-center justify-between gap-8 md:flex-row">
         <div className="flex flex-col items-center md:items-start gap-2">
-          <a href="#" className="text-2xl font-bold tracking-tighter text-zinc-50">
-            Alex<span className="text-indigo-500">.</span>
+          <a
+            href="#"
+            className="text-2xl font-bold tracking-tighter text-zinc-50"
+          >
+            Ankur<span className="text-indigo-500">.</span>
           </a>
           <p className="text-sm text-zinc-500">
             &copy; {currentYear} {personal.name}. All rights reserved.
