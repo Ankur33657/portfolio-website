@@ -1,15 +1,18 @@
-import { motion } from 'motion/react';
-import { SectionHeading } from '@/components/ui/SectionHeading';
-import { portfolioData } from '@/data/portfolio';
-import { Briefcase } from 'lucide-react';
-
+import { motion } from "motion/react";
+import { SectionHeading } from "@/components/ui/SectionHeading";
+import { portfolioData } from "@/data/portfolio";
+import { Briefcase } from "lucide-react";
+import { Contributions } from "./contribution";
 export function Experience() {
   const { experience } = portfolioData;
 
   return (
     <section id="experience" className="py-24 bg-zinc-50 dark:bg-zinc-950">
       <div className="max-w-4xl mx-auto px-6">
-        <SectionHeading title="Experience" subtitle="My professional journey and career milestones." />
+        <SectionHeading
+          title="Experience"
+          subtitle="My professional journey and career milestones."
+        />
 
         <div className="relative border-l-2 border-zinc-200 dark:border-zinc-800 ml-4 md:ml-0">
           {experience.map((exp, index) => (
@@ -17,7 +20,7 @@ export function Experience() {
               key={index}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-100px' }}
+              viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
               className="mb-12 ml-8 md:ml-12 relative"
             >
@@ -28,8 +31,12 @@ export function Experience() {
               <div className="bg-white dark:bg-zinc-900 p-6 rounded-2xl shadow-sm border border-zinc-100 dark:border-zinc-800 hover:shadow-md transition-shadow">
                 <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                   <div>
-                    <h3 className="text-xl font-bold text-zinc-900 dark:text-zinc-50">{exp.role}</h3>
-                    <p className="text-lg font-medium text-indigo-600 dark:text-indigo-400">{exp.company}</p>
+                    <h3 className="text-xl font-bold text-zinc-900 dark:text-zinc-50">
+                      {exp.role}
+                    </h3>
+                    <p className="text-lg font-medium text-indigo-600 dark:text-indigo-400">
+                      {exp.company}
+                    </p>
                   </div>
                   <span className="text-sm font-medium text-zinc-500 dark:text-zinc-400 bg-zinc-100 dark:bg-zinc-800 px-3 py-1 rounded-full mt-2 md:mt-0 w-fit">
                     {exp.duration}
@@ -59,6 +66,7 @@ export function Experience() {
           ))}
         </div>
       </div>
+      <Contributions />
     </section>
   );
 }
