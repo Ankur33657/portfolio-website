@@ -1,7 +1,7 @@
-import { motion } from 'motion/react';
-import { SectionHeading } from '@/components/ui/SectionHeading';
-import { portfolioData } from '@/data/portfolio';
-import { Github, ExternalLink } from 'lucide-react';
+import { motion } from "motion/react";
+import { SectionHeading } from "@/components/ui/SectionHeading";
+import { portfolioData } from "@/data/portfolio";
+import { Github, ExternalLink } from "lucide-react";
 
 export function Projects() {
   const { projects } = portfolioData;
@@ -31,21 +31,26 @@ export function Projects() {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   referrerPolicy="no-referrer"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-zinc-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-between p-6">
+                <div
+                  className="absolute inset-0 bg-gradient-to-t from-zinc-900/80 to-transparent
+                opacity-100 md:opacity-0 md:group-hover:opacity-100
+                transition-opacity duration-300 flex items-end justify-between p-6"
+                >
                   <div className="flex gap-4">
                     <a
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-2 bg-white/20 hover:bg-white/40 backdrop-blur-md rounded-full text-white transition-colors"
+                      className="p-2 bg-white/20 hover:bg-white/40 backdrop-blur-md rounded-full text-white transition-colors cursor-pointer"
                     >
                       <Github className="w-5 h-5" />
                     </a>
+
                     <a
                       href={project.demo}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-2 bg-white/20 hover:bg-white/40 backdrop-blur-md rounded-full text-white transition-colors"
+                      className="p-2 bg-white/20 hover:bg-white/40 backdrop-blur-md rounded-full text-white transition-colors cursor-pointer"
                     >
                       <ExternalLink className="w-5 h-5" />
                     </a>
