@@ -151,7 +151,7 @@ export const portfolioData = {
         "Rate-limiting",
       ],
       github: "https://github.com/Ankur33657/uber-backend",
-      demo: "https://github.com/Ankur33657",
+      demo: "https://uber-frontend-nine.vercel.app/home",
       image: "/uber.webp",
     },
     {
